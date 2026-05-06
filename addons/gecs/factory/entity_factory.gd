@@ -1,4 +1,3 @@
-extends RefCounted
 class_name EntityFactory
 
 static func add_node_entity(node:Node,components:Array[Component],e_name:String="")->Entity:
