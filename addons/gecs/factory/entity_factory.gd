@@ -17,7 +17,7 @@ static func create_entity(world:World,components:Array[Component],e_name:String=
 	world.add_entity(entity)
 	return entity
 
-static func find_node_entity(node:Node2D)->Entity:
+static func find_node_entity(node:Node)->Entity:
 	var world:World= node.get_tree().get_first_node_in_group("World")
 	var entities := world.query.with_all([C_Node]).enabled().execute()
 	for entity:Entity in entities:
